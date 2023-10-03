@@ -4,7 +4,7 @@ export const renderItems = (dataItems) => {
   const container = document.getElementById("root");
   //Empieza el bucle para generar los elementos de cada filme 
   dataItems.forEach((element) => {
-  // Crear un elemento <ul> con atributo itemscope y itemtype
+    // Crear un elemento <ul> con atributo itemscope y itemtype
     const ulElement = document.createElement("ul");
     ulElement.setAttribute("class", "card");
     ulElement.setAttribute("itemscope", "");
@@ -15,7 +15,7 @@ export const renderItems = (dataItems) => {
     liElement.setAttribute("class", "front");
     //Crear el div para contenido
     const divElement = document.createElement("div");
-    divElement.setAttribute("class","content");
+    divElement.setAttribute("class", "content");
     //Imagen
     const imgElement = document.createElement("img");
     imgElement.setAttribute("src", element.poster);
@@ -23,14 +23,14 @@ export const renderItems = (dataItems) => {
     // Crear elementos <dl> y sus respectivos <dt> y <dd> con atributo itemscope y itemtype
     //Crear otro elemento div para el título
     const divTitle = document.createElement("div");
-    divTitle.setAttribute("class","title");
+    divTitle.setAttribute("class", "title");
     //Titulo
     const dlTitle = document.createElement("dl");
     const dtTitle = document.createElement("dt");
     dtTitle.setAttribute("itemprop", "title");
     //crear el div para la info
     const divInfo = document.createElement("div");
-    divInfo.setAttribute("class","info");
+    divInfo.setAttribute("class", "info");
     //Director
     const dlDirector = document.createElement("dl");
     const dtDirector = document.createElement("dt");
@@ -41,7 +41,7 @@ export const renderItems = (dataItems) => {
     dtProducer.setAttribute("itemprop", "producer");
     //crear el div para la info en línea
     const divLineInfo = document.createElement("div");
-    divLineInfo.setAttribute("class","inlineinfo");
+    divLineInfo.setAttribute("class", "inlineinfo");
     //Año lanzamiento
     const dlrelDate = document.createElement("dl");
     const dtrelDate = document.createElement("dt");
@@ -55,10 +55,10 @@ export const renderItems = (dataItems) => {
     liBack.setAttribute("class", "back");
     //Crear el div para contenido
     const divContentBack = document.createElement("div");
-    divContentBack.setAttribute("class","content");
+    divContentBack.setAttribute("class", "content");
     //Crear el div para título trasero
     const divTitleBack = document.createElement("div");
-    divTitleBack.setAttribute("class","title");
+    divTitleBack.setAttribute("class", "title");
     //Titulo
     //const dtTitle = document.createElement("dt");
     //dtTitle.setAttribute("itemprop", "title");

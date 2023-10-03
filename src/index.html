@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta charset="utf-8" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <script src="main.js" type="module"></script>
@@ -17,43 +17,30 @@
       <form>
         <label for="select-filter">Filter by:</label>
         <select data-testid="select-filter" name="properties">
-          <option value="0" selected> Select...
           <option value="director">Director</option>
           <option value="producer">Producer</option>
         </select>
-        <select name="elements">
-
-        <label for="select-filter">Director:</label>
-        <select data-testid="select-filter" name="filtro">
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Yoshifumi Kondo">Yoshifumi Kondo</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-        </select>
+        <select name="elements"></select>
         <label for="select-sort">Ordenar:</label>
         <select data-testid="select-sort" name="orden">
           <option value="rt_score">Ranking</option>
           <option value="release_date">Año</option>
           <legend>Orden:</legend>
           <label for="asc">
-              <input type="radio" id="asc" name="sort-order" value="asc"> Ascendente
+            <input type="radio" id="asc" name="sort-order" value="asc" />
+            Ascendente
           </label>
           <label for="desc">
-              <input type="radio" id="desc" name="sort-order" value="desc"> Descendente
+            <input type="radio" id="desc" name="sort-order" value="desc" />
+            Descendente
           </label>
-          
         </select>
+        <button data-testid="button-clear" class="button" id="button-clear">
+          Reset
+        </button>
       </form>
-    <button data-testid="button-filter" id="button-filter">Filtrar</button>
-    <button data-testid="button-clear" id="button-clear">Reset</button>
-      <section class="cards" id="root">
-      </section>
-    <button data-testid="button-clear" id="button-filter">Filtrar</button>
       <section class="cards" id="root"></section>
     </main>
-    <div id="result-container"></div>
-    <footer>Leslie Zuñiga & Catalina Ordenes</footer>
+    <footer>Leslie Zuñiga y Catalina Ordenes</footer>
   </body>
 </html>
