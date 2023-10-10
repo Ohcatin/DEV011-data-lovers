@@ -275,6 +275,7 @@ footer {
 @media (max-width: 342px) {
   .card {
     width: 80%;
+    height: 120%;
     perspective: 60%;
     align-items: center;
   }
