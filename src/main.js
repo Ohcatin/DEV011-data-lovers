@@ -68,7 +68,7 @@ btn2.addEventListener("click", (event) => {
   event.target.style.backgroundColor = "pink";
   //Ahora volvemos a cargar los datos de todas las películas
   const container = document.getElementById("root");
-  return container.appendChild(renderItems(dataItems));
+  container.appendChild( renderItems(dataItems));
 });
 
 //--3-----Función para select depende del otro select
@@ -88,7 +88,7 @@ select1.addEventListener("change", () => {
 select2.addEventListener("change", () => {
   const filterBy = select1.value;
   const value = select2.value;
-  const dataItems = filterData(data, filterBy, value);
+  const dataItems = filterData(data.films, filterBy, value);
   //primero tenemos que borrar todos los elementos que ya estan en la página
   const elementsCardClass = document.querySelectorAll(".card");
   elementsCardClass.forEach((element) => {
@@ -100,7 +100,7 @@ select2.addEventListener("change", () => {
   //estadistica de ranking
   const estadisticaRanking = computeStat(dataItems);
   rankingLength.innerHTML = `Average ranking/promedio del ranking: ${estadisticaRanking}`;
-  return container.appendChild(renderItems(dataItems));
+  container.appendChild(renderItems(dataItems));
 });
 
 //--5-----función para ordenar la data---------------
@@ -111,14 +111,14 @@ selectSort.addEventListener("change", () => {
   const sortOrder = selectOrder.value;
   const filterBy = select1.value;
   const value = select2.value;
-  const dataItems = filterData(data, filterBy, value);
+  const dataItems = filterData(data.films, filterBy, value);
   const sortedData = sortData(dataItems, sortBy, sortOrder); // Llama a la función de ordenar
   const elementsCardClass = document.querySelectorAll(".card");
   elementsCardClass.forEach((element) => {
     element.remove();
   });
   const container = document.getElementById("root");
-  return container.appendChild(renderItems(sortedData));
+  container.appendChild(renderItems(sortedData));
 });
 //evento change en los select para order
 selectOrder.addEventListener("change", () => {
@@ -126,12 +126,13 @@ selectOrder.addEventListener("change", () => {
   const sortOrder = selectOrder.value;
   const filterBy = select1.value;
   const value = select2.value;
-  const dataItems = filterData(data, filterBy, value);
+  const dataItems = filterData(data.films, filterBy, value);
   const sortedData = sortData(dataItems, sortBy, sortOrder);
   const elementsCardClass = document.querySelectorAll(".card");
   elementsCardClass.forEach((element) => {
     element.remove();
   });
   const container = document.getElementById("root");
-  return container.appendChild(renderItems(sortedData));
+  container.appendChild(renderItems(sortedData));
 });
+

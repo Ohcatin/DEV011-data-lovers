@@ -43,4 +43,4 @@ export const renderItems = (dataItems) => {
   });
   ul.innerHTML = template;
   return ul;
-};
+}

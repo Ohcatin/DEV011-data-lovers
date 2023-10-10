@@ -1,10 +1,10 @@
 export const filterData = (data, filterBy, value) => {
-  const filteredData = data.films.filter((film) => film[filterBy] === value);
+  const filteredData = data.filter((data) => data[filterBy] === value);
   return filteredData;
 };
 
-export const sortData = (dataItems, sortBy, sortOrder) => {
-  const copyData = [...dataItems];
+export const sortData = (data, sortBy, sortOrder) => {
+  const copyData = [...data];
   const compare = (a, b) => {
     const sortByA = parseFloat(a[sortBy]);
     const sortByB = parseFloat(b[sortBy]);
