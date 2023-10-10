@@ -1,10 +1,9 @@
-import { peopleData} from './dataFunctions.js';
+import { peopleData } from "./dataFunctions.js";
 
 export const renderItems = (dataItems) => {
   //Primero vamos a hacer la variable de referencia "padre"
-  const ul = document.createElement('ul')
-  ul.setAttribute("name","cards")
-
+  const ul = document.createElement("ul");
+  ul.setAttribute("name", "cards");
   let template = "";
   dataItems.forEach((element) => {
     const infoPeople = peopleData(element);
@@ -34,10 +33,8 @@ export const renderItems = (dataItems) => {
           <div class="title">
             <dt></dt><dd itemprop="title">${element.title}</dd>
           </div>
-          <div class= "description">
-            <dt></dt><dd class="text" itemprop="description">${element.description}</dd>
-          </div>
-         <dt>Cast:</dt><dd itemprop="description">It has ${infoPeople.length}   characters</dd> 
+        <dt></dt><dd itemprop="description">${element.description}</dd>
+        <dt>Cast:</dt><dd itemprop="description">It has ${infoPeople.length}  characters</dd> 
         </div>
       </dl>
     </div>
@@ -46,4 +43,4 @@ export const renderItems = (dataItems) => {
   });
   ul.innerHTML = template;
   return ul;
-};
+}

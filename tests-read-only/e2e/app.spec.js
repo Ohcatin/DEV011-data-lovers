@@ -138,7 +138,7 @@ test.describe('Pagina interraciones', () => {
       expect(valuesSortedDesc).toEqual([...valuesNoSorted].sort().reverse());
     });
 
-    test.only('el button "button-clear" limpia los filtros y sort, volvemos a los resultados original', async ({ page }) => {
+    test('el button "button-clear" limpia los filtros y sort, volvemos a los resultados original', async ({ page }) => {
       await page.goto('http://localhost:5000/');
       const originalLis = await page.$$(liSelector);
       const select = await page.getByTestId('select-filter');

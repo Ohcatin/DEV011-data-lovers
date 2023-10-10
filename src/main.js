@@ -48,7 +48,6 @@ const dependentOptions = {
   ],
 };
 
-
 //--1---Función para llamar la funcion renderItems para cargar la data de películas al cargar la página
 window.addEventListener("load", () => {
   const dataItems = data.films;
@@ -89,7 +88,7 @@ select1.addEventListener("change", () => {
 select2.addEventListener("change", () => {
   const filterBy = select1.value;
   const value = select2.value;
-  const dataItems = filterData(data, filterBy, value);
+  const dataItems = filterData(data.films, filterBy, value);
   //primero tenemos que borrar todos los elementos que ya estan en la página
   const elementsCardClass = document.querySelectorAll(".card");
   elementsCardClass.forEach((element) => {
@@ -112,7 +111,7 @@ selectSort.addEventListener("change", () => {
   const sortOrder = selectOrder.value;
   const filterBy = select1.value;
   const value = select2.value;
-  const dataItems = filterData(data, filterBy, value);
+  const dataItems = filterData(data.films, filterBy, value);
   const sortedData = sortData(dataItems, sortBy, sortOrder); // Llama a la función de ordenar
   const elementsCardClass = document.querySelectorAll(".card");
   elementsCardClass.forEach((element) => {
@@ -127,7 +126,7 @@ selectOrder.addEventListener("change", () => {
   const sortOrder = selectOrder.value;
   const filterBy = select1.value;
   const value = select2.value;
-  const dataItems = filterData(data, filterBy, value);
+  const dataItems = filterData(data.films, filterBy, value);
   const sortedData = sortData(dataItems, sortBy, sortOrder);
   const elementsCardClass = document.querySelectorAll(".card");
   elementsCardClass.forEach((element) => {
