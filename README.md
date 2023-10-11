@@ -47,6 +47,7 @@ Se hizo una página web de peliculas Studio Ghibli, los usuarios pueden hacer un
   
   Y acá esta nuestro prototipo de alta fidelidad :
   ![Prototipo de alta fidelidad](<Captura.png>)
+  
   Y acá el link donde se trabajó en figma: https://www.figma.com/file/OGIDbJZ4YSv4sEJbYvVndd/Untitled?type=design&node-id=0%3A1&mode=design&t=jqjyvKv3b02mKPeL-1 
 
 
