@@ -34,6 +34,11 @@ Se hizo una página web de peliculas Studio Ghibli, los usuarios pueden hacer un
   
   Nos guiamos de este wireframe para pensar en nuestro prototipo:
   ![Imagen referencial prototipo de baja fidelidad](image.png)
+  Y aquí como se hizo en papel: 
+  Como fue pensado en una página web en computadora
+  ![Prototipo de baja fidelidad hecho en papel](prototipodebajafidelidad2.jpg)
+  Y pensado responsive en pantalla de celular:
+  ![Prototipo de baja fidelidad pensado en celular en papel](prototipodebajafidelidad.jpg)
   
   Y acá esta nuestro prototipo de alta fidelidad :
   ![Prototipo de alta fidelidad](<Captura.png>)
